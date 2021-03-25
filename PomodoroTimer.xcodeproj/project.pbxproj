@@ -12,6 +12,8 @@
 		180D0065260B943D00309697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180D0064260B943D00309697 /* Assets.xcassets */; };
 		180D0068260B943D00309697 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180D0067260B943D00309697 /* Preview Assets.xcassets */; };
 		180D006B260B943D00309697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180D0069260B943D00309697 /* Main.storyboard */; };
+		180D0077260BA13000309697 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180D0075260BA12800309697 /* AVFoundation.framework */; };
+		180D007E260BA1C500309697 /* ting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180D007D260BA1C500309697 /* ting.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		180D006A260B943D00309697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		180D006C260B943D00309697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180D006D260B943D00309697 /* PomodoroTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PomodoroTimer.entitlements; sourceTree = "<group>"; };
+		180D0075260BA12800309697 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		180D007D260BA1C500309697 /* ting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ting.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180D0077260BA13000309697 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +46,7 @@
 			children = (
 				180D005F260B943C00309697 /* PomodoroTimer */,
 				180D005E260B943C00309697 /* Products */,
+				180D0074260BA12800309697 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +61,7 @@
 		180D005F260B943C00309697 /* PomodoroTimer */ = {
 			isa = PBXGroup;
 			children = (
+				180D007A260BA18900309697 /* Sounds */,
 				180D0060260B943C00309697 /* AppDelegate.swift */,
 				180D0062260B943C00309697 /* ContentView.swift */,
 				180D0064260B943D00309697 /* Assets.xcassets */,
@@ -72,6 +79,22 @@
 				180D0067260B943D00309697 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		180D0074260BA12800309697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180D0075260BA12800309697 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		180D007A260BA18900309697 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				180D007D260BA1C500309697 /* ting.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180D007E260BA1C500309697 /* ting.mp3 in Resources */,
 				180D006B260B943D00309697 /* Main.storyboard in Resources */,
 				180D0068260B943D00309697 /* Preview Assets.xcassets in Resources */,
 				180D0065260B943D00309697 /* Assets.xcassets in Resources */,
@@ -286,7 +310,7 @@
 				CODE_SIGN_ENTITLEMENTS = PomodoroTimer/PomodoroTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"PomodoroTimer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "PomodoroTimer/Preview\\ Content";
 				DEVELOPMENT_TEAM = B7325U76F5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -310,7 +334,7 @@
 				CODE_SIGN_ENTITLEMENTS = PomodoroTimer/PomodoroTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"PomodoroTimer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "PomodoroTimer/Preview\\ Content";
 				DEVELOPMENT_TEAM = B7325U76F5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
